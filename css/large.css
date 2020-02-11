@@ -1,0 +1,49 @@
+/* 헤더 */
+.header {
+  background: pink;
+  width: 840px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  background: lightgreen;
+  display: inline-block;
+}
+
+.logoImg {
+  padding: 25px;
+}
+
+/* 메뉴 */
+.nav {
+  background: lightblue;
+}
+
+.menuBtn {
+  width: 70px;
+  height: 70px;
+  border: none;
+  padding: 0;
+  margin-right: 25px;
+}
+
+.btnTop, .btnMiddle, .btnBottom {
+  display: block;
+  background: black;
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.menu {
+  background: lightseagreen;
+}
+
+.

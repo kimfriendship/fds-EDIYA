@@ -1,0 +1,25 @@
+.header {
+  background: pink;
+  width: 1440px;
+  height: 67px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  background: lightgreen;
+}
+
+.logoImg {
+  padding: 26px 0 21px 26px;
+}
+
+.nav {
+  background: lightblue;
+}
+
+.menu {
+  background: lightseagreen;
+}

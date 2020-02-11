@@ -1,0 +1,15 @@
+/* small reset */
+button { 
+  font-size: 100%; 
+  vertical-align: middle
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+body {
+  -webkit-text-size-adjust: none;
+} 
+
+button{
+  -webkit-appearance:button; 
+  border-radius:0;
+}

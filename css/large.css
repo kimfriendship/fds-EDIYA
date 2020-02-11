@@ -89,3 +89,71 @@
 .btnLeft {
   transform: rotate(-45deg);
 }
+
+/* 메인 */
+.main {
+    padding: 0 10%;
+}
+
+.drinkList {
+    background-color: violet;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.drink {
+    background-color: turquoise;
+    width: 22%;
+    /* border: 1px solid black; */
+    margin-right: 4%;
+    margin: 15px;
+}
+
+.drink:nth-child(4n){
+    margin-right: 0;
+}
+
+.drinkThumb {
+
+}
+
+.drinkImg {
+    position: relative;    
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.drinkCaption {
+    background-color: cadetblue;
+    font-size: 1.8em;
+    text-align: center;
+
+}
+
+.drinkInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.4);
+    display: none;
+}
+
+.drinkName {
+    background-color: chocolate;
+}
+
+.drinkEng {
+    background-color: cornflowerblue;
+}
+
+.drinkSummary {
+    background-color: crimson;
+}
+
+.nutrientList {
+    
+}

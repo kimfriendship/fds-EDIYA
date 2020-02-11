@@ -15,7 +15,6 @@
 
 /* 메뉴 */
 .nav {
-  background: lightblue;
   width: 100%;
 }
 
@@ -65,14 +64,19 @@
   border-bottom: 1px solid rgba(33, 55, 120, 0.5);
 }
 
+.menuLink:hover, .menuLink:focus {
+  background: #2E437C;
+}
+
 .menuClose {
   width: 50px;
   height: 50px;
   border: none;
+  padding: 0;
   background: rgba(33, 55, 120, 0);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
 }
 
 .btnRight, .btnLeft {
@@ -83,11 +87,13 @@
 }
 
 .btnRight {
-  transform: rotate(45deg);
+  margin: 0 auto;
+  transform: translateY(50%) rotate(45deg);
 }
 
 .btnLeft {
-  transform: rotate(-45deg);
+  margin: 0 auto;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 /* 메인 */
@@ -96,7 +102,6 @@
 }
 
 .drinkList {
-    background-color: violet;
     display: flex;
     flex-flow: row wrap;
     width: 100%;

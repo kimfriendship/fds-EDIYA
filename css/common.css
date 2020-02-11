@@ -5,6 +5,7 @@ body{
   font-size: 10px;
   font-family: "Noto Sans KR", sans-serif;
   background: #fff;
+  box-sizing: border-box;
 }
 
 /* 숨김 컨텐츠 */

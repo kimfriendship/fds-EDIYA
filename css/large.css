@@ -1,5 +1,5 @@
 /* 애니메이션 */
-@keyframes headerAni {
+@keyframes heightAni {
   0% {
     transform: translate(0, -100%);
   }
@@ -9,23 +9,17 @@
   }
 }
 
-@keyframes logoAni {
+@keyframes widthAni {
   0% {
-    transform: translate(-300%, 0);
+    width: 2500px;
+    top: 0;
+    left: -650px;
   }
 
   100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes menuAni {
-  0% {
-    transform: translate(-100%, 0);
-  }
-
-  100% {
-    transform: translate(0, 0);
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -40,15 +34,13 @@
   left: 0;
   border-bottom: 3px solid #ddd;
   z-index: 90;
-  animation-name: headerAni;
-  animation-duration: 1s;
+  animation-name: heightAni, widthAni;
+  animation-duration: .5s, 1s;
 }
 
 .logo {
   animation-name: logoAni;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-duration: .5s;
 }
 
 .logoImg {
@@ -72,7 +64,7 @@
   background: rgba(255, 255, 255, 0);
   cursor: pointer;
   animation-name: menuAni;
-  animation-duration: 1s;
+  animation-duration: .5s;
 }
 
 .menuBtn:hover, .menuBtn:focus {

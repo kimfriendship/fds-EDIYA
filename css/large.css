@@ -102,18 +102,11 @@
 }
 
 .drinkList {
-<<<<<<< HEAD
   background-color: violet;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   justify-content: space-between;
-=======
-    background-color: violet;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
->>>>>>> b3594642c1e9a0ff24aac0188c1a96804dd5671a
 }
 
 .drink {

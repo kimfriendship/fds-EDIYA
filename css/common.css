@@ -23,6 +23,15 @@ a {
   color: inherit;
 }
 
+::-moz-selection {
+  background: #2E437C;
+  color: #fff;
+}
+::selection {
+  background: #2E437C;
+  color: #fff;
+}
+
 .responsive {
   max-width: 100%;
   height: auto;

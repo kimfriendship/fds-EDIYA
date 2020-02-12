@@ -28,6 +28,31 @@ a {
   height: auto;
 }
 
+/* 애니메이션 */
+@keyframes heightAni {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes widthAni {
+  0% {
+    width: 2500px;
+    top: 0;
+    left: -650px;
+  }
+
+  100% {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
 /* 헤더 */
 .header {
   background: rgba(255, 255, 255, 0.4);
@@ -36,7 +61,10 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.63);
+  z-index: 90;
+  animation-name: heightAni, widthAni;
+  animation-duration: .5s, 1s;
 }
 
 .logoImg {
@@ -57,7 +85,12 @@ a {
   height: 70px;
   border: none;
   padding: 0;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.menuBtn:hover, .menuBtn:focus {
+  background: rgba(211, 211, 211, 0.4);
 }
 
 .btnTop, .btnMiddle, .btnBottom {

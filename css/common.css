@@ -22,3 +22,133 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 애니메이션 */
+@keyframes heightAni {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes widthAni {
+  0% {
+    width: 2500px;
+    top: 0;
+    left: -650px;
+  }
+
+  100% {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* 헤더 */
+.header {
+  background: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.63);
+  z-index: 90;
+  animation-name: heightAni, widthAni;
+  animation-duration: .5s, 1s;
+}
+
+.logoImg {
+  padding: 25px;
+}
+
+/* 메뉴 */
+.nav {
+  background: lightblue;
+  width: 100%;
+}
+
+.menuBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  border: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.menuBtn:hover, .menuBtn:focus {
+  background: rgba(211, 211, 211, 0.4);
+}
+
+.btnTop, .btnMiddle, .btnBottom {
+  display: block;
+  background: black;
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.menu {
+  background: hsla(225, 57%, 10%, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-100%);
+}
+
+.menuList {
+  padding-top: 60px;
+}
+
+.menuLink {
+  display: block;
+  color: #ffffff;
+  font-size: 1.6em;
+  padding: 20px 30px;
+  border-bottom: 1px solid hsla(225, 57%, 30%, 0.5);
+}
+
+.menuItem:hover, .menuLink:focus {
+  background: #2E437C;
+}
+
+.menuClose {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: rgba(33, 55, 120, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btnRight, .btnLeft {
+  display: block;
+  background: white;
+  width: 26px;
+  height: 3px;
+}
+
+.btnRight {
+  transform: rotate(45deg);
+}
+
+.btnLeft {
+  transform: rotate(-45deg);
+}

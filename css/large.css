@@ -108,11 +108,10 @@
 /* 메인 */
 .main {
   padding: 90px 10% 0;
-  /* background-color: tom  ato; */
+  background-color: tomato;
 }
 
 .drinkList {
-  background-color: violet;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -120,12 +119,11 @@
 }
 
 .drink {
-  background-color: turquoise;
   width: 22%;
-  /* border: 1px solid black; */
   margin-right: 4%;
   margin-bottom: 10px;
   position: relative;
+  background: #F5F5F5;
 }
 
 .drink:nth-child(4n){
@@ -134,16 +132,7 @@
 
 .drinkCaption {
   text-align: center;
-  background-color: cadetblue;
   font-size: 1.8em;
-}
-
-.drinkThumb {
-
-}
-
-.drinkImg {
-     
 }
 
 .responsive {
@@ -156,13 +145,12 @@
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.4);
-  /* display: none; */
   padding: 42px 20px 10px;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-flow: column wrap;
-  box-sizing: border-box;
+  display: none;
 }
 
 .drinkName {
@@ -188,21 +176,13 @@
   column-rule: 1px solid #999;
   width: 100%;
   font-size: 1.3em;  
-  
 }
 
 .nutrient, .content {
   display: inline-block;
   width: 45%;
-}
-
-.nutrient {
-  
-  
-}
-
-.content {
-  
+  height: 19px;
+  line-height: 19px;
 }
 
 .infoClose {
@@ -211,19 +191,25 @@
   right: 10px;   
   width: 26px;
   height: 26px;
-  /* overflow: hidden; */ 
+  overflow: hidden; 
 }
+
+.infoClose .btnRight, .infoClose .btnLeft {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
 .infoClose .btnRight {
   transform: translateY(50%) rotate(45deg) scale(.7);
-  margin: 0 auto;
-  
 }
 
 .infoClose .btnLeft { 
   transform: translateY(-50%) rotate(-45deg) scale(.7);
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 840px) {
   body { background-color: lightgreen; }
  }
+ 
+
+ 

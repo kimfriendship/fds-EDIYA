@@ -39,6 +39,14 @@ button{
   margin-bottom: 8%;
 }
 
+.drink:nth-child(3) img{
+  transform: scale(.9);
+}
+
+.drink:nth-child(4) img{
+  transform: scale(.95);
+}
+
 .drinkCaption {
   font-size: 1.8em;
   padding-bottom: 8%;
@@ -55,7 +63,7 @@ button{
   display: flex;
   flex-flow: column wrap;
   text-align: left;
-  /* display: none; */
+  display: none;
 }
 
 .drinkName {

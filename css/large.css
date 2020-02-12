@@ -154,7 +154,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .drink {
@@ -166,14 +165,11 @@
   text-align: center;
   animation-name: mainAni;
   animation-duration: 3s;
+  margin: 0 4% 4% 0;
 }
 
-.drink:nth-child(2n+1){
-  margin: 0 2.5% 4% 0%;
-}
-
-.drink:nth-child(2n){
-  margin: 0 0% 4% 2.5%;
+.drink:nth-child(3n){
+  margin-right: 0;
 }
 
 .drinkCaption {
@@ -192,7 +188,7 @@
   display: flex;
   flex-flow: column wrap;
   text-align: left;
-  display: none;
+  /* display: none; */
 }
 
 .drinkName {
@@ -219,7 +215,7 @@
   columns: 2;
   column-rule: 1px solid #999;
   width: 100%;
-  font-size: 1.3em;  
+  font-size: 0;
 }
 
 .nutrient, .content {
@@ -227,6 +223,8 @@
   width: 48%;
   height: 19px;
   line-height: 19px;
+  font-size: .83rem;  
+  padding-left: 4%;
 }
 
 .infoClose {
@@ -249,6 +247,20 @@
 .infoClose .btnLeft { 
   transform: translateY(-50%) rotate(-45deg) scale(.6);
 }
+@media screen and (max-width: 1440px) {
+  .drinkList{
+    align-items: center;
+  }
+
+  .drink:nth-child(2n+1){
+    margin: 0 2.5% 4% 0%;
+  }
+  
+  .drink:nth-child(2n){
+    margin: 0 0% 4% 2.5%;
+  }
+}
+
 
 @media screen and (max-width: 840px) {
   body { 
@@ -276,9 +288,3 @@
   .nutrientList {
     font-size: 1.1em;  
   }
-
- }
-
-
-
- 

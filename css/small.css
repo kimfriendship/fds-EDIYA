@@ -55,7 +55,7 @@ button{
   display: flex;
   flex-flow: column wrap;
   text-align: left;
-  display: none;
+  /* display: none; */
 }
 
 .drinkName {
@@ -90,6 +90,10 @@ button{
   width: 48%;
   height: 19px;
   line-height: 19px;
+}
+
+.nutrient:nth-child(2n){
+  padding-left: 5%;
 }
 
 .infoClose {

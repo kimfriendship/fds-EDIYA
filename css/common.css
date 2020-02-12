@@ -121,6 +121,10 @@ a {
   transform: translateY(-100%);
 }
 
+.menuIsAct .menu{
+  transform: none;
+}
+
 .menuList {
   padding-top: 60px;
 }
@@ -160,4 +164,25 @@ a {
 
 .btnLeft {
   transform: rotate(-45deg);
+}
+
+
+.drink:nth-child(3) img:hover{
+  transform: scale(1);
+}
+
+.drink:nth-child(4) img:hover{
+  transform: scale(1.02);
+}
+
+.drink img:hover{
+  transform: scale(1.1);
+}
+
+.figCapHidden{
+  visibility: hidden;
+}
+
+.figCapVisible{
+  visibility: visible;
 }

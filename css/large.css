@@ -1,16 +1,40 @@
+/* 애니메이션 */
+@keyframes heightAni {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes widthAni {
+  0% {
+    width: 2500px;
+    top: 0;
+    left: -650px;
+  }
+
+  100% {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
 /* 헤더 */
 .header {
-  /* background: rgba(255, 255, 255, 0.4); */
-  background: lightblue;
+  background: rgba(255, 255, 255, 0.4);
   width: 100%;
   height: 70px;
   position: fixed;
-  top: -70px;
+  top: 0;
   left: 0;
-  border-bottom: 3px solid #ddd;
-  transition: 1s;
-  transform: translateY(70px);
+  border-bottom: 1px solid rgba(238, 238, 238, 0.63);
   z-index: 90;
+  animation-name: heightAni, widthAni;
+  animation-duration: .5s, 1s;
 }
 
 .logoImg {

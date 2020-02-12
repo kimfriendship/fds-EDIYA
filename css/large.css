@@ -1,3 +1,34 @@
+/* 애니메이션 */
+@keyframes headerAni {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes logoAni {
+  0% {
+    transform: translate(-300%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes menuAni {
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 /* 헤더 */
 .header {
   /* background: rgba(255, 255, 255, 0.4); */
@@ -5,12 +36,19 @@
   width: 100%;
   height: 70px;
   position: fixed;
-  top: -70px;
+  top: 0;
   left: 0;
   border-bottom: 3px solid #ddd;
-  transition: 1s;
-  transform: translateY(70px);
   z-index: 90;
+  animation-name: headerAni;
+  animation-duration: 1s;
+}
+
+.logo {
+  animation-name: logoAni;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
 }
 
 .logoImg {
@@ -33,6 +71,8 @@
   padding: 0;
   background: rgba(255, 255, 255, 0);
   cursor: pointer;
+  animation-name: menuAni;
+  animation-duration: 1s;
 }
 
 .menuBtn:hover, .menuBtn:focus {

@@ -1,12 +1,16 @@
 /* 헤더 */
 .header {
-  background: rgba(255, 255, 255, 0.4);
+  /* background: rgba(255, 255, 255, 0.4); */
+  background: lightblue;
   width: 100%;
   height: 70px;
   position: fixed;
-  top: 0;
+  top: -70px;
   left: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 3px solid #ddd;
+  transition: 1s;
+  transform: translateY(70px);
+  z-index: 90;
 }
 
 .logoImg {
@@ -27,8 +31,14 @@
   height: 70px;
   border: none;
   padding: 0;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
+
+.menuBtn:hover, .menuBtn:focus {
+  background: rgba(211, 211, 211, 0.4);
+}
+
 
 .btnTop, .btnMiddle, .btnBottom {
   display: block;
@@ -98,6 +108,7 @@
 /* 메인 */
 .main {
   padding: 90px 10% 0;
+  background-color: tomato;
 }
 
 .drinkList {
@@ -165,7 +176,6 @@
   column-rule: 1px solid #999;
   width: 100%;
   font-size: 1.3em;  
-  
 }
 
 .nutrient, .content {
@@ -173,8 +183,6 @@
   width: 45%;
   height: 19px;
   line-height: 19px;
-  
-  
 }
 
 .infoClose {

@@ -23,6 +23,23 @@
   }
 }
 
+@keyframes mainAni {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translate(0, 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 5vh);
+  }
+}
+
 /* 헤더 */
 .header {
   background: rgba(255, 255, 255, 0.6);
@@ -34,7 +51,7 @@
   border-bottom: 1px solid rgba(238, 238, 238, 0.9);
   z-index: 90;
   animation-name: heightAni, widthAni;
-  animation-duration: .5s, 1s;
+  animation-duration: .8s, 1.2s;
 }
 
 .logoImg {
@@ -43,7 +60,6 @@
 
 /* 메뉴 */
 .nav {
-  background: lightblue;
   width: 100%;
 }
 
@@ -148,6 +164,8 @@
   position: relative;
   background: #F5F5F5;
   text-align: center;
+  animation-name: mainAni;
+  animation-duration: 3s;
 }
 
 .drink:nth-child(2n+1){

@@ -29,6 +29,7 @@ a {
   height: auto;
 }
 
+/* 드래그 했을 때 색상 변경 */
 ::-moz-selection {
   background: #2E437C;
   color: #fff;
@@ -38,7 +39,7 @@ a {
   color: #fff;
 }
 
-/* 애니메이션 */
+/* 헤더 */
 @keyframes heightAni {
   0% {
     transform: translate(0, -100%);
@@ -51,19 +52,18 @@ a {
 
 @keyframes widthAni {
   0% {
-    width: 2500px;
     top: 0;
     left: -650px;
+    width: 2500px;
   }
 
   100% {
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
   }
 }
 
-/* 헤더 */
 .header {
   background: rgba(255, 255, 255, 0.4);
   width: 100%;
@@ -95,7 +95,6 @@ a {
   border: none;
   padding: 0;
   background: rgba(255, 255, 255, 0);
-  cursor: pointer;
 }
 
 .menuBtn:hover, .menuBtn:focus {
@@ -167,12 +166,61 @@ a {
   transform: translateY(-50%) rotate(-45deg);
 }
 
+/* 메인 공통 사항 */
+@keyframes fadeInAni {
+  0% {
+    opacity: 0;
+  } 
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .main {
   padding: 100px 5% 0;
 }
 
+.drinkList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.drink:nth-child(1) {
+  animation-duration: 2s;
+}
+.drink:nth-child(2) {
+  animation-duration: 2.2s;
+}
+.drink:nth-child(3) {
+  animation-duration: 2.4s;
+}
+.drink:nth-child(4) {
+  animation-duration: 2.6s;
+}
+.drink:nth-child(5) {
+  animation-duration: 2.8s;
+}
+.drink:nth-child(6) {
+  animation-duration: 2.9s;
+}
+.drink:nth-child(7) {
+  animation-duration: 3.1s;
+}
+.drink:nth-child(8) {
+  animation-duration: 3.3s;
+}
+
 .drink {
   min-height: 380px;
+  position: relative;
+  background: #F5F5F5;
+  text-align: center;
+  animation-name: mainAni;
+  cursor: pointer;
 }
 
 .drink:nth-child(n) img {
@@ -184,7 +232,7 @@ a {
 }
 
 .drink:nth-child(3) img {
-  transform: scale(.92);
+  transform: scale(.9);
 }
 
 .drink:nth-child(4) img {
@@ -203,6 +251,29 @@ a {
   transform: scale(1.1);
 }
 
+.drinkCaption {
+  font-size: 1.8em;
+  padding-bottom: 8%;
+}
+
+.drinkCaption.off {
+  visibility: hidden;
+}
+
+.drinkInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: left;
+  display: none;
+  padding: 10% 5% 5% 5%;
+}
+
 .drinkInfo.on {
   display: flex;
   animation-name: fadeInAni;
@@ -210,22 +281,70 @@ a {
   animation-timing-function: ease-out;
 }
 
-.drinkCaption.off {
-  visibility: hidden;
+.drinkName {
+  font-size: 1.8em;
+  border-bottom: 2px solid #202023;
+  margin: 0 0 4% 0;
+  padding: 0 0 4% 0;
+  line-height: 1.4;
 }
 
-
-@keyframes fadeInAni {
-  0% {
-    opacity: 0;
-  } 
-
-  100% {
-    opacity: 1;
-  }
+.drinkEng {
+  color: #737373;
+  display: block;
+  font-size: 0.778em;
 }
 
-@keyframes fadeOutAni {
+.drinkSummary {
+  font-size: 1.6em;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.nutrientList {
+  columns: 2;
+  column-rule: 1px solid #999;
+  width: 92%;
+  font-size: 0;
+}
+
+.nutrient, .content {
+  display: inline-block;
+  height: 19px;
+  line-height: 19px;
+  font-size: .83rem;
+}
+
+.nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
+  padding-left: 16%;
+}
+
+.infoClose {
+  position: absolute;
+  top: 0;
+  right: 0;   
+  width: 35px;
+  height: 35px;
+}
+
+.infoClose:hover {
+  background: rgba(211, 211, 211, 0.4);
+}
+
+.infoClose .btnRight, .infoClose .btnLeft {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.infoClose .btnRight {
+  transform: translateY(50%) rotate(45deg) scale(.6);
+}
+
+.infoClose .btnLeft { 
+  transform: translateY(-50%) rotate(-45deg) scale(.6);
+}
+
+/* @keyframes fadeOutAni {
   0% {
     opacity: 1;
   } 
@@ -239,5 +358,5 @@ a {
   animation-name: fadeOutAni;
   animation-duration: .8s;
   animation-timing-function: ease-out;
-}
+} */
 

@@ -1,7 +1,7 @@
 
 // 음료 상세버튼 (for문 돌려야함)
 const drinkInfoON = document.querySelector('.drinkThumb');
-const btnClose = document.querySelector('.closeBtn');
+const btnClose = document.querySelector('.infoClose');
 const figCap = document.querySelector('.drinkCaption');
 const nav = document.querySelector('.nav');
 const btn = nav.querySelector('.menuBtn');

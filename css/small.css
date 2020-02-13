@@ -28,7 +28,7 @@ body {
     font-size: .75rem;
   }
   
-  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
+  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11) {
     padding-left: 4%;
   }
  }

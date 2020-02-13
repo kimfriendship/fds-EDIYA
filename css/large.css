@@ -66,7 +66,7 @@
 }
 
 .drink {
-  background-color: turquoise;
+  /* background-color: turquoise; */
   width:48%;
   max-width: 500px;
   position: relative;

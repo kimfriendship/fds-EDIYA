@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("./reset.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
 
 body{
   font-size: 10px;
@@ -15,7 +16,7 @@ body{
   height: 1px;
   overflow: hidden;
   clip: rect(0,0,0,0);
-  clip-path: polygon(0 0, 0 0, 0 0);
+  /* clip-path: polygon(0 0, 0 0, 0 0); */
 }
 
 a {
@@ -30,10 +31,6 @@ a {
 ::selection {
   background: #2E437C;
   color: #fff;
-}
-
-.main {
-  padding: 100px 5% 0;
 }
 
 .responsive {
@@ -172,6 +169,10 @@ a {
   transform: translateY(-50%) rotate(-45deg);
 }
 
+.drinkList{
+  padding: 100px 5% 0;
+}
+
 .drink {
   min-height: 380px;
 }
@@ -214,7 +215,6 @@ a {
 .drinkCaption.off {
   visibility: hidden;
 }
-
 
 @keyframes fadeInAni {
   0% {

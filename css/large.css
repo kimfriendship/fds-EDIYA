@@ -66,7 +66,7 @@
 }
 
 .drink {
-  background-color: turquoise;
+  /* background-color: turquoise; */
   width:48%;
   max-width: 500px;
   position: relative;
@@ -74,6 +74,7 @@
   text-align: center;
   margin: 0 4% 4% 0;
   animation-name: mainAni;
+  cursor: pointer;
 }
 
 .drink:nth-child(1) {
@@ -182,6 +183,11 @@
   right: 10px;   
   width: 26px;
   height: 26px;
+  cursor: pointer;
+}
+
+.infoClose:hover {
+  background: rgba(211, 211, 211, 0.4);
 }
 
 .infoClose .btnRight, .infoClose .btnLeft {

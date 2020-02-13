@@ -215,6 +215,10 @@
   font-size: 1.8em;
 }
 
+.drinkCaption.off {
+  display: none;
+}
+
 .drinkInfo {
   position: absolute;
   top: 0;
@@ -229,7 +233,7 @@
   display: none;
 }
 
-.on {
+.drinkInfo.on {
   display: flex;
 }
 

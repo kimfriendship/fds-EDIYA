@@ -179,10 +179,13 @@ a {
   transform: scale(1.1);
 }
 
-.figCapHidden{
+/* .figCapHidden{
   visibility: hidden;
 }
 
 .figCapVisible{
   visibility: visible;
-}
+} */
+
+/* 위 css 추가할 필요없이  large.css .drinkCaption 에 .off 클래스 추가
+   off를 add, remove해서 사용   일단 주석처리 */

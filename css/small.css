@@ -52,6 +52,10 @@ button{
   padding-bottom: 8%;
 }
 
+.drinkCaption.off {
+  display: none;
+}
+
 .drinkInfo {
   position: absolute;
   top: 0;
@@ -64,6 +68,10 @@ button{
   flex-flow: column wrap;
   text-align: left;
   display: none;
+}
+
+.drinkInfo.on {
+  display: flex;
 }
 
 .drinkName {

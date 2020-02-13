@@ -1,25 +1,15 @@
-// const nav = document.querySelector('.nav');
-// const btn = nav.querySelector('.menuBtn');
-// const list = nav.querySelector('.menuList');
-// const items = list.querySelectorAll('.menuItem');
-// const links = list.querySelectorAll('.menuLink');
+const nav = document.querySelector('.nav');
+const btn = document.querySelector('.menuBtn');
+const closeMenu = document.querySelector('.menuClose');
+const menu = document.querySelector('.menu');
 
+btn.addEventListener('click', function(e){    
+  nav.classList.add('menuIsAct');
+});
 
-// const btn = document.querySelector('menuBtn')
-
-
-
-// btn.addEventListener('click', function(){
-//   btn.classList.add();
-// });
-
-
-// btn click ->  open  menu
-
-// thumb click  -> info hide show
-
-// closeBtn click -> info show
-// 
+closeMenu.addEventListener('click', function(e){    
+  nav.classList.remove('menuIsAct');
+});
 
 // 이벤트 주었을 때, 박스 크기작아짐 
 
@@ -35,8 +25,6 @@ for(let i = 0; i < drinkThumbs.length; i ++){
   const drinkInfo = drinkInfos[i];
   const drinkCaption = drinkCaptions[i];
 
-
-
   drinkThumb.addEventListener('click', function(e){    
     drinkInfo.classList.add('on');
     drinkCaption.classList.add('off');
@@ -44,9 +32,11 @@ for(let i = 0; i < drinkThumbs.length; i ++){
 
   closeBtn.addEventListener('click', function(e){  
     drinkInfo.classList.remove('on');
+    // drinkInfo.classList.add('fadeOut');
     drinkCaption.classList.remove('off');
   });
 }
+
 
 
 

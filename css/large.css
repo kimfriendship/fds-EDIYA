@@ -1,105 +1,8 @@
-/* 애니메이션 */
-@keyframes heightAni {
-  0% {
-    transform: translate(0, -100%);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes widthAni {
-  0% {
-    width: 150%;
-    top: 0;
-    left: -40%;
-  } 
-
-  100% {
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-}
-
-@keyframes mainAni {
-  0% {
-    opacity: 0;
-  } 
-
-  50% {
-    opacity: 0;
-    transform: translate(0, 30%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-/* 헤더 */
-.header {
-  background: rgba(255, 255, 255, 0.6);
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid rgba(238, 238, 238, 0.9);
-  z-index: 90;
-  animation-name: heightAni, widthAni;
-  animation-duration: .8s, 1.2s;
-}
-
-.logoImg {
-  padding: 25px;
-}
-
 /* 메인 */
-.drinkList {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .drink {
-  /* background-color: turquoise; */
   width:48%;
   max-width: 500px;
-  position: relative;
-  background: #F5F5F5;
-  text-align: center;
   margin: 0 4% 4% 0;
-  animation-name: mainAni;
-  cursor: pointer;
-}
-
-.drink:nth-child(1) {
-  animation-duration: 2s;
-}
-.drink:nth-child(2) {
-  animation-duration: 2.2s;
-}
-.drink:nth-child(3) {
-  animation-duration: 2.4s;
-}
-.drink:nth-child(4) {
-  animation-duration: 2.6s;
-}
-.drink:nth-child(5) {
-  animation-duration: 2.8s;
-}
-.drink:nth-child(6) {
-  animation-duration: 2.9s;
-}
-.drink:nth-child(7) {
-  animation-duration: 3.1s;
-}
-.drink:nth-child(8) {
-  animation-duration: 3.3s;
 }
 
 .drink:nth-child(2n){
@@ -118,89 +21,15 @@
 }
 
 .drinkCaption {
-  font-size: 1.8em;
   flex-grow: 5;
-  padding-bottom: 8%;
-}
-
-.drinkInfo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.4);
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: column wrap;
-  text-align: left;
-  display: none;
-  padding: 10% 5% 5% 5%;
-}
-
-.drinkName {
-  font-size: 1.8em;
-  border-bottom: 2px solid #202023;
-  margin: 0 0 4% 0;
-  padding: 0 0 4% 0;
-  line-height: 1.4;
-}
-
-.drinkEng {
-  color: #737373;
-  display: block;
-  font-size: 0.778em;
-}
-
-.drinkSummary {
-  font-size: 1.6em;
-  line-height: 1.6;
-  flex-grow: 1;
 }
 
 .nutrientList {
-  columns: 2;
-  column-rule: 1px solid #999;
-  width: 92%;
-  font-size: 0;
   margin-left: 6%;
 }
 
 .nutrient, .content {
-  display: inline-block;
   width: 42%;
-  height: 19px;
-  line-height: 19px;
-  font-size: .83rem;
-}
-
-.nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
-  padding-left: 16%;
-}
-
-.infoClose {
-  position: absolute;
-  top: 0;
-  right: 0;   
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-}
-
-.infoClose:hover {
-  background: rgba(211, 211, 211, 0.4);
-}
-
-.infoClose .btnRight, .infoClose .btnLeft {
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.85);
-}
-
-.infoClose .btnRight {
-  transform: translateY(50%) rotate(45deg) scale(.6);
-}
-
-.infoClose .btnLeft { 
-  transform: translateY(-50%) rotate(-45deg) scale(.6);
 }
 
 @media screen and (max-width: 1537px) {
@@ -210,10 +39,6 @@
 }
 
 @media screen and (max-width: 840px) {
-  body { 
-    background-color: lightgreen;
-  }
-
   .drink {
     max-width: 400px;
   }
@@ -261,7 +86,7 @@
 @media screen and (max-width: 650px) {
   .nutrient, .content {
     width: 43%;
-    font-size: .66rem;
+    font-size: .72rem;
   }
   
   .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){

@@ -232,7 +232,6 @@ a {
   background: #F5F5F5;
   text-align: center;
   animation-name: mainAni;
-  cursor: pointer;
 }
 
 .drink:nth-child(n) img {
@@ -261,6 +260,10 @@ a {
 
 .drink img:hover {
   transform: scale(1.1);
+}
+
+.drinkThumb {
+  cursor: pointer;
 }
 
 .drinkCaption {

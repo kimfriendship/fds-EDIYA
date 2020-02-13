@@ -5,18 +5,18 @@
   margin: 0 4% 4% 0;
 }
 
-.drink:nth-child(2n){
+.drink:nth-child(2n) {
   margin-right: 0;
 }
 
-.drinkThumb{
-  box-sizing: border-box;
+.drinkThumb {
   display: inline-flex;
   flex-flow: column nowrap;
   height: 100%;
+  box-sizing: border-box;
 }
 
-.drinkImg{
+.drinkImg {
   flex-grow:8;
 }
 
@@ -43,7 +43,7 @@
     max-width: 400px;
   }
 
-  .drinkCaption{
+  .drinkCaption {
     flex-grow:1;
   }
 
@@ -67,7 +67,7 @@
     font-size: .8rem;
   }
   
-  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
+  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11) {
     padding-left: 14%;
   }
 }
@@ -78,7 +78,7 @@
     font-size: .75rem;
   }
   
-  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
+  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11) {
     padding-left: 8%;
   }
 }
@@ -89,7 +89,7 @@
     font-size: .72rem;
   }
   
-  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
+  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11) {
     padding-left: 4%;
   }
 }

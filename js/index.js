@@ -31,11 +31,22 @@ for(let i = 0; i < drinkThumbs.length; i ++){
   });
 
   closeBtn.addEventListener('click', function(e){  
+  
     drinkInfo.classList.remove('on');
-    // drinkInfo.classList.add('fadeOut');
     drinkCaption.classList.remove('off');
   });
+  
+    // closeBtn.addEventListener('click', function(e){
+
+    // setTimeout(function(){ 
+    //   drinkInfo.classList.remove('on').style.tansition="opacity 2s ease";
+    //   drinkCaption.classList.remove('off');
+
+    // }, 2000);
+    // });
+  
 }
+
 
 
 

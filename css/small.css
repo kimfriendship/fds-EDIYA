@@ -3,11 +3,6 @@ body {
   -webkit-text-size-adjust: none;
 } 
 
-/* 무너지는지 확인해볼것 */
-.drinkList {
-  align-items: center;
-}
-
 .drink {
   width: 100%;
   max-width: 400px;

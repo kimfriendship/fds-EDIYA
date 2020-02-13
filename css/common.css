@@ -173,8 +173,14 @@ body{
   }
 }
 
-.main {
-  padding: 100px 5% 0;
+@keyframes fadeOutAni {
+  0% {
+    opacity: 1;
+  } 
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .drinkList {
@@ -265,11 +271,14 @@ body{
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  display: flex;
   flex-flow: column wrap;
   text-align: left;
   display: none;
   padding: 10% 5% 5% 5%;
+  /* animation-direction: reverse;
+  animation-name: fadeInAni; */ 
+  animation-timing-function: ease-out;
+  /* animation-duration: .8s; */
 }
 
 .drinkInfo.on {
@@ -342,19 +351,4 @@ body{
   transform: translateY(-50%) rotate(-45deg) scale(.6);
 }
 
-/* @keyframes fadeOutAni {
-  0% {
-    opacity: 1;
-  } 
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.fadeOut{
-  animation-name: fadeOutAni;
-  animation-duration: .8s;
-  animation-timing-function: ease-out;
-} */
 

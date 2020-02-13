@@ -82,19 +82,21 @@ button{
 .nutrientList {
   columns: 2;
   column-rule: 1px solid #999;
-  width: 100%;
+  width: 92%;
   font-size: 1.3em;  
+  margin-left: 4%;
 }
 
 .nutrient, .content {
   display: inline-block;
-  width: 48%;
+  width: 40%;
   height: 19px;
   line-height: 19px;
+  font-size: .83rem;
 }
 
-.nutrient:nth-child(2n){
-  padding-left: 5%;
+.nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
+  padding-left: 16%;
 }
 
 .infoClose {
@@ -117,3 +119,14 @@ button{
 .infoClose .btnLeft { 
   transform: translateY(-50%) rotate(-45deg) scale(.6);
 }
+
+@media screen and (max-width: 375px) {
+  .nutrient, .content {
+    width: 43%;
+    font-size: .75rem;
+  }
+  
+  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
+    padding-left: 4%;
+  }
+ }

@@ -74,6 +74,7 @@
   text-align: center;
   margin: 0 4% 4% 0;
   animation-name: mainAni;
+  cursor: pointer;
 }
 
 .drink:nth-child(1) {
@@ -178,10 +179,15 @@
 
 .infoClose {
   position: absolute;
-  top: 10px;
-  right: 10px;   
-  width: 26px;
-  height: 26px;
+  top: 0;
+  right: 0;   
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.infoClose:hover {
+  background: rgba(211, 211, 211, 0.4);
 }
 
 .infoClose .btnRight, .infoClose .btnLeft {
@@ -239,9 +245,9 @@
   .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
     padding-left: 14%;
   }
- }
+}
 
- @media screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .nutrient, .content {
     width: 41%;
     font-size: .75rem;
@@ -261,4 +267,4 @@
   .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
     padding-left: 4%;
   }
- }
+}

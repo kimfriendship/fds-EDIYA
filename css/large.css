@@ -1,61 +1,3 @@
-/* 애니메이션 */
-@keyframes heightAni {
-  0% {
-    transform: translate(0, -100%);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes widthAni {
-  0% {
-    width: 150%;
-    top: 0;
-    left: -40%;
-  } 
-
-  100% {
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-}
-
-@keyframes mainAni {
-  0% {
-    opacity: 0;
-  } 
-
-  50% {
-    opacity: 0;
-    transform: translate(0, 30%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-/* 헤더 */
-.header {
-  background: rgba(255, 255, 255, 0.6);
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid rgba(238, 238, 238, 0.9);
-  z-index: 90;
-  animation-name: heightAni, widthAni;
-  animation-duration: .8s, 1.2s;
-}
-
-.logoImg {
-  padding: 25px;
-}
-
 /* 메인 */
 .drinkList {
   display: flex;
@@ -70,7 +12,7 @@
   width:48%;
   max-width: 500px;
   position: relative;
-  background: #F5F5F5;
+  background: #fff;
   text-align: center;
   margin: 0 4% 4% 0;
   animation-name: mainAni;

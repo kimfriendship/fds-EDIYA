@@ -288,6 +288,14 @@ a {
   box-sizing: border-box;
 }
 
+.drinkInfo.d{
+  display: none;
+  animation-name: fadeInAni;
+  animation-direction: reverse;
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
+}
+
 .drinkInfo.on {
   display: flex;
   animation-name: fadeInAni;

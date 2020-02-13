@@ -32,6 +32,7 @@ for(let i = 0; i < drinkThumbs.length; i ++){
 
   closeBtn.addEventListener('click', function(e){  
     drinkInfo.classList.remove('on');
+    // drinkInfo.classList.add('fadeOut');
     drinkCaption.classList.remove('off');
   });
 }

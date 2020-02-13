@@ -32,6 +32,10 @@ a {
   color: #fff;
 }
 
+.main {
+  padding: 100px 5% 0;
+}
+
 .responsive {
   max-width: 100%;
   height: auto;
@@ -148,8 +152,8 @@ a {
   border: none;
   background: rgba(33, 55, 120, 0);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
 }
 
 .btnRight, .btnLeft {
@@ -157,35 +161,84 @@ a {
   background: white;
   width: 26px;
   height: 3px;
+  margin: 0 auto;
 }
 
 .btnRight {
-  transform: rotate(45deg);
+  transform: translateY(50%) rotate(45deg);
 }
 
 .btnLeft {
-  transform: rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
 }
 
+.drink {
+  min-height: 380px;
+}
 
-.drink:nth-child(3) img:hover{
+.drink:nth-child(n) img {
+  transition: 0.5s ease-out; /* vendorless fallback */
+  -o-transition: 0.5s ease-out; /* opera */
+  -ms-transition: 0.5s ease-out; /* IE 10 */
+  -moz-transition: 0.5s ease-out; /* Firefox */
+  -webkit-transition: 0.5s ease-out; /*safari and chrome */
+}
+
+.drink:nth-child(3) img {
+  transform: scale(.92);
+}
+
+.drink:nth-child(4) img {
+  transform: scale(.95);
+}
+
+.drink:nth-child(3) img:hover {
   transform: scale(1);
 }
 
-.drink:nth-child(4) img:hover{
+.drink:nth-child(4) img:hover {
   transform: scale(1.02);
 }
 
-.drink img:hover{
+.drink img:hover {
   transform: scale(1.1);
 }
 
-
 .drinkInfo.on {
   display: flex;
+  animation-name: fadeInAni;
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
 }
 
 .drinkCaption.off {
   visibility: hidden;
+}
+
+
+@keyframes fadeInAni {
+  0% {
+    opacity: 0;
+  } 
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAni {
+  0% {
+    opacity: 1;
+  } 
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut{
+  animation-name: fadeOutAni;
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
 }
 

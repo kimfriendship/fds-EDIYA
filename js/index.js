@@ -30,25 +30,20 @@ for(let i = 0; i < drinkThumbs.length; i ++){
     drinkCaption.classList.add('off');
   });
 
-  // setTimeout(function(){ 
-  //   closeBtn.addEventListener('click', function(e){  
-    
-  //     drinkInfo.classList.remove('on');
-  //     drinkCaption.classList.remove('off');
-  //   }).opacity = "1.0";
-  // }, 2000);
-
+  closeBtn.addEventListener('click', function(e){  
   
-    closeBtn.addEventListener('click', function(e){
-
-    setTimeout(function(){ 
-      drinkInfo.classList.remove('on').style.tansition="opacity 2s ease";
-      drinkCaption.classList.remove('off');
-
-    }, 2000);
-    });
-
+    drinkInfo.classList.remove('on');
+    drinkCaption.classList.remove('off');
+  });
   
+    // closeBtn.addEventListener('click', function(e){
+
+    // setTimeout(function(){ 
+    //   drinkInfo.classList.remove('on').style.tansition="opacity 2s ease";
+    //   drinkCaption.classList.remove('off');
+
+    // }, 2000);
+    // });
   
 }
 

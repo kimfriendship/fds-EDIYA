@@ -276,7 +276,7 @@ a {
 
 .drinkInfo {
   display: none;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   text-align: left;
   position: absolute;
   top: 0;

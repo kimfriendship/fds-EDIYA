@@ -263,6 +263,10 @@ a {
 }
 
 .drinkThumb {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  box-sizing: border-box;
   cursor: pointer;
 }
 

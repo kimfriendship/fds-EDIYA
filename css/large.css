@@ -33,9 +33,9 @@
 }
 
 @media screen and (max-width: 1537px) {
-  .drinkList{
+  /* .drinkList{
     max-width: 100%;
-  }
+  } */
 }
 
 @media screen and (max-width: 840px) {

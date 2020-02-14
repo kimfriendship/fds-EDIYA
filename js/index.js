@@ -2,24 +2,18 @@ const nav = document.querySelector('.nav');
 const btn = document.querySelector('.menuBtn');
 const closeMenu = document.querySelector('.menuClose');
 const menu = document.querySelector('.menu');
-
 btn.addEventListener('click', function(e){    
   nav.classList.add('menuIsAct');
 });
-
 closeMenu.addEventListener('click', function(e){    
   nav.classList.remove('menuIsAct');
 });
-
 // 이벤트 주었을 때, 박스 크기작아짐 
-
 const drinkInfos = document.querySelectorAll('.drinkInfo');
 const drinkThumbs = document.querySelectorAll('.drinkThumb');
 const drinkInfoCloseBtns = document.querySelectorAll('.infoClose');
 const drinkCaptions = document.querySelectorAll('.drinkCaption');
-
 for(let i = 0; i < drinkThumbs.length; i ++){
-
   const drinkThumb = drinkThumbs[i];
   const closeBtn = drinkInfoCloseBtns[i];
   const drinkInfo = drinkInfos[i];
@@ -30,24 +24,16 @@ for(let i = 0; i < drinkThumbs.length; i ++){
     drinkCaption.classList.add('off');
   });
 
-  // closeBtn.addEventListener('click', function(e){  
+  closeBtn.addEventListener('click', function(e){  
+    drinkInfo.classList.remove('on');
+    drinkCaption.classList.remove('off');
+  });
   
-  //   drinkInfo.classList.remove('on');
-  //   drinkCaption.classList.remove('off');
-  // });
-  
-    closeBtn.addEventListener('click', function(e){
-
-    setTimeout(function(){ 
-      drinkCaption.classList.remove('off');
-      drinkInfo.classList.remove('on').add('d').style.transition="opacity .5s";
-
-    }, 2000);
-    });
+    // closeBtn.addEventListener('click', function(e){
+    // setTimeout(function(){ 
+    //   drinkInfo.classList.remove('on').style.tansition="opacity 2s ease";
+    //   drinkCaption.classList.remove('off');
+    // }, 2000);
+    // });
   
 }
-
-
-
-
-

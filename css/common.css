@@ -93,7 +93,6 @@ a {
   width: 70px;
   height: 70px;
   padding: 0;
-  border: none;
   background: rgba(255, 255, 255, 0);
 }
 
@@ -262,6 +261,7 @@ a {
 }
 
 .drinkThumb {
+  width: 100%;
   cursor: pointer;
 }
 
@@ -286,14 +286,6 @@ a {
   padding: 10% 5% 5% 5%;
   background: rgba(255, 255, 255, 0.4);
   box-sizing: border-box;
-}
-
-.drinkInfo.d{
-  display: none;
-  animation-name: fadeInAni;
-  animation-direction: reverse;
-  animation-duration: .8s;
-  animation-timing-function: ease-out;
 }
 
 .drinkInfo.on {

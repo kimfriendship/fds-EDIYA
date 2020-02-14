@@ -32,12 +32,6 @@
   width: 42%;
 }
 
-@media screen and (max-width: 1537px) {
-  .drinkList{
-    max-width: 100%;
-  }
-}
-
 @media screen and (max-width: 840px) {
   .drink {
     max-width: 400px;

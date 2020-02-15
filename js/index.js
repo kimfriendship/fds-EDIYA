@@ -12,14 +12,12 @@ closeMenu.addEventListener('click', function(e){
 });
 
 // 이벤트 주었을 때, 박스 크기작아짐 
-
 const drinkInfos = document.querySelectorAll('.drinkInfo');
 const drinkThumbs = document.querySelectorAll('.drinkThumb');
 const drinkInfoCloseBtns = document.querySelectorAll('.infoClose');
 const drinkCaptions = document.querySelectorAll('.drinkCaption');
 
 for(let i = 0; i < drinkThumbs.length; i ++){
-
   const drinkThumb = drinkThumbs[i];
   const closeBtn = drinkInfoCloseBtns[i];
   const drinkInfo = drinkInfos[i];
@@ -38,7 +36,7 @@ for(let i = 0; i < drinkThumbs.length; i ++){
   
     // closeBtn.addEventListener('click', function(e){
 
-    // setTimeout(function(){ 
+    // setTimeout(funcion(){ 
     //   drinkInfo.classList.remove('on').style.tansition="opacity 2s ease";
     //   drinkCaption.classList.remove('off');
 
@@ -46,6 +44,7 @@ for(let i = 0; i < drinkThumbs.length; i ++){
     // });
   
 }
+
 
 
 

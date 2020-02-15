@@ -9,13 +9,6 @@
   margin-right: 0;
 }
 
-.drinkThumb {
-  display: inline-flex;
-  flex-flow: column nowrap;
-  height: 100%;
-  box-sizing: border-box;
-}
-
 .drinkImg {
   flex-grow:8;
 }

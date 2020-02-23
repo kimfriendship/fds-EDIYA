@@ -1,0 +1,82 @@
+/* 메인 */
+.drink {
+  width:48%;
+  max-width: 500px;
+  margin: 0 4% 4% 0;
+}
+
+.drink:nth-child(2n) {
+  margin-right: 0;
+}
+
+.drinkImg {
+  flex-grow:8;
+}
+
+.drinkCaption {
+  flex-grow: 5;
+}
+
+.nutrientList {
+  margin-left: 6%;
+}
+
+.nutrient, .content {
+  width: 42%;
+}
+
+@media screen and (max-width: 840px) {
+  .drink {
+    max-width: 400px;
+  }
+
+  .drinkCaption {
+    flex-grow:1;
+  }
+
+  .drinkInfo {
+    padding: 8% 4% 4% 4%;
+  }
+
+  .drinkSummary {
+    font-size: 1.4em;
+    line-height: 1.4;
+  }
+
+  .nutrientList {
+    font-size: .8em;  
+    width: 96%;
+    margin-left: 4%;
+  }
+
+  .nutrient, .content {
+    width: 38%;
+    font-size: .8rem;
+  }
+  
+  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11) {
+    padding-left: 14%;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .nutrient, .content {
+    width: 41%;
+    font-size: .75rem;
+  }
+  
+  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11) {
+    padding-left: 8%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nutrient, .content {
+    width: 43%;
+    font-size: .72rem;
+  }
+  
+  .nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11) {
+    padding-left: 4%;
+  }
+}

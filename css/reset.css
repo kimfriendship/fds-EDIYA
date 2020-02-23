@@ -1,0 +1,52 @@
+html, body, div, span, h1, h2, h3, p, a, address, em, img, strong, dl, dt, dd, ol, ul, li, article,figure, figcaption, footer, header, menu, nav, section{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.clear {
+  clear:both; 
+  height: 0;
+}
+
+.hide {
+  position: absolute; 
+  top: -9999px; 
+  left: -9999px; 
+  overflow: hidden;
+}
+
+.hidetext {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

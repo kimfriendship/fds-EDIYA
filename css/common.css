@@ -1,0 +1,366 @@
+@charset "utf-8";
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+
+body {
+  background: #fff;
+  font-size: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 숨김 컨텐츠 */
+.a11yHidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0,0,0,0);
+}
+
+/* 반응형 이미지 */
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 드래그 했을 때 색상 변경 */
+::-moz-selection {
+  background: #2E437C;
+  color: #fff;
+}
+::selection {
+  background: #2E437C;
+  color: #fff;
+}
+
+/* 헤더 */
+@keyframes heightAni {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes widthAni {
+  0% {
+    top: 0;
+    left: -650px;
+    width: 2500px;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.63);
+  background: rgba(255, 255, 255, 0.4);
+  animation-name: heightAni, widthAni;
+  animation-duration: .5s, 1s;
+}
+
+.logoImg {
+  padding: 25px;
+}
+
+/* 메뉴 */
+.nav {
+  width: 100%;
+  background: lightblue;
+}
+
+.menuBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+}
+
+.menuBtn:hover, .menuBtn:focus {
+  background: rgba(211, 211, 211, 0.4);
+}
+
+.btnTop, .btnMiddle, .btnBottom {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  background: black;
+  text-align: center;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 100vh;
+  background: hsla(225, 57%, 10%, 0.9);
+  transform: translateX(100%);
+  transition: .3s ease-out;
+}
+
+.menuIsAct .menu{
+  transform: none;
+}
+
+.menuList {
+  padding-top: 60px;
+}
+
+.menuLink {
+  display: block;
+  padding: 20px 30px;
+  border-bottom: 1px solid hsla(225, 57%, 30%, 0.5);
+  font-size: 1.6em;
+  color: #fff;
+}
+
+.menuItem:hover, .menuLink:focus {
+  background: #2E437C;
+}
+
+.menuClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background: rgba(33, 55, 120, 0);
+}
+
+.btnRight, .btnLeft {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.btnRight {
+  transform: translateY(50%) rotate(45deg);
+}
+
+.btnLeft {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* 메인 공통 사항 */
+@keyframes fadeInAni {
+  0% {
+    opacity: 0;
+  } 
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.drinkList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 5% 0;
+}
+
+.drink:nth-child(1) {
+  animation-duration: 2s;
+}
+.drink:nth-child(2) {
+  animation-duration: 2.2s;
+}
+.drink:nth-child(3) {
+  animation-duration: 2.4s;
+}
+.drink:nth-child(4) {
+  animation-duration: 2.6s;
+}
+.drink:nth-child(5) {
+  animation-duration: 2.8s;
+}
+.drink:nth-child(6) {
+  animation-duration: 2.9s;
+}
+.drink:nth-child(7) {
+  animation-duration: 3.1s;
+}
+.drink:nth-child(8) {
+  animation-duration: 3.3s;
+}
+
+@keyframes mainAni {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translate(0, 30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.drink {
+  position: relative;
+  min-height: 380px;
+  background: #F5F5F5;
+  text-align: center;
+  animation-name: mainAni;
+}
+
+.drink:nth-child(n) img {
+  transition: 0.5s ease-out; /* vendorless fallback */
+  -o-transition: 0.5s ease-out; /* opera */
+  -ms-transition: 0.5s ease-out; /* IE 10 */
+  -moz-transition: 0.5s ease-out; /* Firefox */
+  -webkit-transition: 0.5s ease-out; /*safari and chrome */
+}
+
+.drink:nth-child(3) img {
+  transform: scale(.9);
+}
+
+.drink:nth-child(4) img {
+  transform: scale(.95);
+}
+
+.drink:nth-child(3) img:hover {
+  transform: scale(1);
+}
+
+.drink:nth-child(4) img:hover {
+  transform: scale(1.02);
+}
+
+.drink img:hover {
+  transform: scale(1.1);
+}
+
+.drinkThumb {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.drinkCaption {
+  font-size: 1.8em;
+  padding-bottom: 8%;
+}
+
+.drinkCaption.off {
+  visibility: hidden;
+}
+
+.drinkInfo {
+  display: none;
+  flex-flow: column wrap;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10% 5% 5% 5%;
+  background: rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+}
+
+.drinkInfo.on {
+  display: flex;
+  animation-name: fadeInAni;
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
+}
+
+.drinkName {
+  line-height: 1.4;
+  margin: 0 0 4% 0;
+  padding: 0 0 4% 0;
+  border-bottom: 2px solid #202023;
+  font-size: 1.8em;
+}
+
+.drinkEng {
+  display: block;
+  font-size: 0.778em;
+  color: #737373;
+}
+
+.drinkSummary {
+  flex-grow: 1;
+  line-height: 1.6;
+  font-size: 1.6em;
+}
+
+.nutrientList {
+  width: 92%;
+  font-size: 0;
+  columns: 2;
+  column-rule: 1px solid #999;
+}
+
+.nutrient, .content {
+  display: inline-block;
+  height: 19px;
+  line-height: 19px;
+  font-size: .83rem;
+}
+
+.nutrient:nth-child(7), .nutrient:nth-child(9), .nutrient:nth-child(11){
+  padding-left: 16%;
+}
+
+.infoClose {
+  position: absolute;
+  top: 0;
+  right: 0;   
+  width: 35px;
+  height: 35px;
+}
+
+.infoClose:hover {
+  background: rgba(211, 211, 211, 0.4);
+}
+
+.infoClose .btnRight, .infoClose .btnLeft {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.infoClose .btnRight {
+  transform: translateY(50%) rotate(45deg) scale(.6);
+}
+
+.infoClose .btnLeft { 
+  transform: translateY(-50%) rotate(-45deg) scale(.6);
+}
+
+

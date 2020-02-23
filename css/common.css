@@ -39,7 +39,6 @@ a {
   color: #fff;
 }
 
-/* 헤더 */
 @keyframes heightAni {
   0% {
     transform: translate(0, -100%);
@@ -94,7 +93,6 @@ a {
   width: 70px;
   height: 70px;
   padding: 0;
-  border: none;
   background: rgba(255, 255, 255, 0);
 }
 
@@ -265,6 +263,7 @@ a {
 .drinkThumb {
   display: inline-flex;
   flex-flow: column nowrap;
+  width: 100%;
   height: 100%;
   box-sizing: border-box;
   cursor: pointer;
@@ -281,7 +280,7 @@ a {
 
 .drinkInfo {
   display: none;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   text-align: left;
   position: absolute;
   top: 0;
